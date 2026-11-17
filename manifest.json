@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Infinity Music",
+  "version": "0.3",
+  "description": "Вечная активность для вкладки YouTube Music",
+  "content_scripts": [
+    {
+      "matches": ["*://music.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+"icons": {
+    "48": "icon48.png"
+  }
+}
